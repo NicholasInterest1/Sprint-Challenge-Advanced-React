@@ -5,9 +5,7 @@ function PlayersCard(props) {
   return (
       <div className="player-info">
           <TheA
-        href={`http://www.wikipedia.org/wiki/${props.data.name
-          .split(' ')
-          .join(' ')}`}
+        href={`http://www.wikipedia.org/wiki/${props.data.name}`}
         rel='noopener noreferrer'>
         <TheP>Name: {props.data.name}</TheP>
         <TheP2>Country: {props.data.country}</TheP2>
