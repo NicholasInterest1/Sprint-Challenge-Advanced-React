@@ -8,7 +8,6 @@ function PlayersCard(props) {
         href={`http://www.wikipedia.org/wiki/${props.data.name
           .split(' ')
           .join(' ')}`}
-        target='_blank'
         rel='noopener noreferrer'>
         <TheP>Name: {props.data.name}</TheP>
         <TheP2>Country: {props.data.country}</TheP2>
