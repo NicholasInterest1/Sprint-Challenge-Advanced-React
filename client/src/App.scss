@@ -202,22 +202,18 @@ h4 {
     border: none;
   }
 }
-.player-wrapper {
-  display: flex;
-  flex-direction: row;
 
-  .player-info {
-    justify-content: center;
-    flex-wrap: wrap;
-    background:#979797;
-    border: 2px solid black;
-    font-size: 2rem;
-    width: 300px;
-    height: 200px;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    align-items: center;
-    align-content: center;
-  }
+.player-info {
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #979797;
+  border: 2px solid black;
+  font-size: 2rem;
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  align-items: center;
+  align-content: center;
 }

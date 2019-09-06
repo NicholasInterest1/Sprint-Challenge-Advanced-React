@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import PlayersCard from "./components/PlayersCard";
 
 import "./App.scss";
+import styled from "styled-components";
 
 class App extends React.Component {
   state = {
@@ -21,13 +22,20 @@ class App extends React.Component {
     return (
       <div className="App">
         <NavBar />
+        <TheDiv>
         {this.state.data.map(player => (
           <PlayersCard key={player.id} data={player} />
         ))}
-        {/* <Player data={this.state.data} /> */}
+        </TheDiv>
       </div>
     );
   }
 }
+
+const TheDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+`;
 
 export default App;
