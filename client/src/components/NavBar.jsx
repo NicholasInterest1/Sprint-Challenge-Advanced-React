@@ -12,7 +12,7 @@ function NavBar() {
   return (
     <div className="navbar">
       <h1>Women's World Cup</h1>
-        <button data-testid="darkmode" onClick={toggleMode}>Dark Mode: {darkMode ? 'toggle': 'toggled'}</button>
+        <button data-testid="darkmode" onClick={toggleMode}>Dark Mode: {darkMode ? 'On': 'Off'}</button>
       </div>
   );
 };
