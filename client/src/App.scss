@@ -115,7 +115,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -131,7 +131,7 @@ table {
 
 html {
   font-size: 62.5%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 500;
 }
 
@@ -198,7 +198,26 @@ h4 {
   background-color: #313843;
 
   .navbar {
-    background-color: #1F2022;
+    background-color: #1f2022;
     border: none;
+  }
+}
+.player-wrapper {
+  display: flex;
+  flex-direction: row;
+
+  .player-info {
+    justify-content: center;
+    flex-wrap: wrap;
+    background: black;
+    color: white;
+    font-size: 2rem;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    align-items: center;
+    align-content: center;
   }
 }

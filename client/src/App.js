@@ -1,7 +1,7 @@
 import React from "react";
 
 import NavBar from "./components/NavBar";
-import Player from "./components/Player";
+import PlayersCard from "./components/PlayersCard";
 
 import "./App.scss";
 
@@ -21,7 +21,10 @@ class App extends React.Component {
     return (
       <div className="App">
         <NavBar />
-        <Player data={this.state.data} />
+        {this.state.data.map(player => (
+          <PlayersCard key={player.id} data={player} />
+        ))}
+        {/* <Player data={this.state.data} /> */}
       </div>
     );
   }

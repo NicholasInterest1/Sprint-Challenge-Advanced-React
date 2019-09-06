@@ -1,13 +1,15 @@
 import React from "react";
 
-function PlayersCard (props) {
+function PlayersCard(props) {
   return (
-    <div>
-        <h2>{props.data.name}</h2>
+    <div className="player-wrapper">
+      <div className="player-info">
+        <p>Name: {props.data.name}</p>
+        <p>Country: {props.data.country}</p>
         <p>Google Searches: {props.data.searches}</p>
-        <p>{props.data.country}</p>
+      </div>
     </div>
   );
-};
+}
 
 export default PlayersCard;
